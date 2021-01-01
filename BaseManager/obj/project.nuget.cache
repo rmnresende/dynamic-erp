@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "M0ry3dB+mI0QBhDqdgL90XaTIgy1h3e6Ln8a0s3aD2pmjPIZswNUQRtwcMZy20M9DkHnqRWIdJtrPU/EZE02SA==",
+  "dgSpecHash": "k6qAl5FWZUSiJEinJjyue40oG5z4MK7gfltfL1emvbhSlmBkYm8T6D0MeHVRmLxinep6+Z0r1ohsDwbyxoO4Jw==",
   "success": true,
   "projectFilePath": "/home/renan/Dropbox/git/dynamic-erp/BaseManager/BaseManager.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/renan/.nuget/packages/microsoft.aspnetcore.jsonpatch/3.1.8/microsoft.aspnetcore.jsonpatch.3.1.8.nupkg.sha512",
+    "/home/renan/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/3.1.8/microsoft.aspnetcore.mvc.newtonsoftjson.3.1.8.nupkg.sha512",
+    "/home/renan/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/home/renan/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/home/renan/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -5,9 +5,9 @@ namespace BaseManager.Repository
 {
     public interface IPessoaRepository
     {
-        IEnumerable<PessoaJuridica> RecuperarPessoasJuridicas();
-        IEnumerable<PessoaFisica> RecuperarPessoasFisicas();
-        PessoaJuridica RecuperarPessoaJuridicaPeloId(long id);
-        PessoaJuridica RecuperarPessoaFisicaPeloId(long id);
+        IEnumerable<Pessoa> RecuperarFornecedores();
+        IEnumerable<Pessoa> RecuperarCientes();
+        Pessoa RecuperarFornecedorPeloId(long id);
+        Pessoa RecuperarClientePeloId(long id);
     }
 }

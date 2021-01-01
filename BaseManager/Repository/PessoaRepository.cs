@@ -5,24 +5,84 @@ namespace BaseManager.Repository
 {
     public class PessoaRepository : IPessoaRepository
     {
-        public PessoaJuridica RecuperarPessoaFisicaPeloId(long id)
+        public Pessoa RecuperarClientePeloId(long id)
         {
-            throw new System.NotImplementedException();
+            var cliente = new PessoaFisica
+            {
+                Id = id,
+                NomeOuNomeFantasia = "João",
+                SobreNome = "Silva",
+                Cpf = "0123456789",
+                TipoRelacionamentoComercial = TipoRelacionamentoComercial.CLIENTE
+            };
+
+            return cliente;
         }
 
-        public PessoaJuridica RecuperarPessoaJuridicaPeloId(long id)
+        public Pessoa RecuperarFornecedorPeloId(long id)
         {
-            throw new System.NotImplementedException();
+            var fornecedor = new PessoaJuridica
+            {
+                Id = id,
+                NomeOuNomeFantasia = "Omega Eletronica",
+                RazaoSocial = "Omega Componentes Eletrônicos",
+                Cnpj = "0123456789",
+                TipoRelacionamentoComercial = TipoRelacionamentoComercial.FORNECEDOR
+            };
+
+            return fornecedor;
         }
 
-        public IEnumerable<PessoaFisica> RecuperarPessoasFisicas()
+        public IEnumerable<Pessoa> RecuperarCientes()
         {
-            throw new System.NotImplementedException();
+            var cliente = new PessoaFisica
+            {
+                Id = 10,
+                NomeOuNomeFantasia = "João",
+                SobreNome = "Silva",
+                Cpf = "0123456789",
+                TipoRelacionamentoComercial = TipoRelacionamentoComercial.CLIENTE
+            };
+
+            var clienteFornecedor = new PessoaJuridica
+            {
+                Id = 50,
+                NomeOuNomeFantasia = "Omega Eletronica",
+                RazaoSocial = "Omega Componentes Eletrônicos",
+                Cnpj = "0123456789",
+                TipoRelacionamentoComercial = TipoRelacionamentoComercial.CLIENTE_E_FORNECEDOR
+            };
+
+            return new List<Pessoa>(){
+                cliente,
+                clienteFornecedor
+            };
         }
 
-        public IEnumerable<PessoaJuridica> RecuperarPessoasJuridicas()
+        public IEnumerable<Pessoa> RecuperarFornecedores()
         {
-            throw new System.NotImplementedException();
+            var cliente = new PessoaFisica
+            {
+                Id = 10,
+                NomeOuNomeFantasia = "João",
+                SobreNome = "Silva",
+                Cpf = "0123456789",
+                TipoRelacionamentoComercial = TipoRelacionamentoComercial.CLIENTE
+            };
+
+            var clienteFornecedor = new PessoaJuridica
+            {
+                Id = 50,
+                NomeOuNomeFantasia = "Omega Eletronica",
+                RazaoSocial = "Omega Componentes Eletrônicos",
+                Cnpj = "0123456789",
+                TipoRelacionamentoComercial = TipoRelacionamentoComercial.CLIENTE_E_FORNECEDOR
+            };
+
+            return new List<Pessoa>(){
+                cliente,
+                clienteFornecedor
+            };
         }
     }
 }

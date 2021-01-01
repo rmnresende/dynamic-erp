@@ -5,10 +5,11 @@ namespace BaseManager.Models
 {
     public abstract class Pessoa
     {
-        string NomeOuNomeFantasia { get; set; }
-        long dataCriacaoTimestamp { get; set; }
-        List<Endereco> Enderecos { get; set; }
-        List<Telefone> Telefones { get; set; }
-        TipoRelacionamentoComercial TipoRelacionamentoComercial { get; set; }
+        public long Id { get; set; }
+        public string NomeOuNomeFantasia { get; set; }
+        public long dataCriacaoTimestamp { get; set; }
+        public List<Endereco> Enderecos { get; set; }
+        public List<Telefone> Telefones { get; set; }
+        public TipoRelacionamentoComercial TipoRelacionamentoComercial { get; set; }
     }
 }

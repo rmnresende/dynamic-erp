@@ -15,6 +15,7 @@ namespace BaseManager
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    //.UseUrls("http://*:8080");
                 });
     }
 }
